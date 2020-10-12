@@ -21,7 +21,7 @@ body {
 }
 html {
     overflow-x: hidden;
-    
+    scroll-behavior: smooth;
 }
 .fa-events-icons-ready {
     overflow-y: hidden;
@@ -31,6 +31,7 @@ html {
 }
 
 .section {
+
     background-color: $gy;
     // position: absolute;
     display        : flex;
@@ -38,6 +39,12 @@ html {
     align-items    : center;
     justify-content: space-between;
     padding : 0 60px;
+    border-top: 90px solid transparent;
+	margin-top: -90px;
+	padding: 15px; /* паддинги - без проблем */
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
     &__header {
         text-align : center;
         font-family: $rb;

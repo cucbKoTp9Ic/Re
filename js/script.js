@@ -186,3 +186,10 @@ var pressed = false;
 //     }
 //   }
 // });
+$('.nav__menu a').on("click", function(){
+  $('.nav__menu a').removeClass('active');
+  $(this).addClass('active');
+  });
+  $('.header__arrow').on("click", function(){
+    $('.nav__menu a').removeClass('active');
+    });

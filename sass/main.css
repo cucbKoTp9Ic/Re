@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Proxima Nova Light';
   src: url("ProximaNova-Light.eot");
@@ -53,6 +54,7 @@ body {
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .fa-events-icons-ready {
@@ -79,6 +81,11 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 60px;
+  border-top: 90px solid transparent;
+  margin-top: -90px;
+  padding: 15px;
+  /* паддинги - без проблем */
+  background-clip: padding-box;
 }
 
 .section__header {
@@ -112,6 +119,12 @@ html {
 }
 
 .nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  margin: auto;
+  width: 100%;
+  z-index: 1000;
   height: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -145,11 +158,12 @@ html {
 
 .nav__link {
   padding: 5px 10px;
-  margin: 0 15px;
+  margin: 0px;
   font-family: "Raleway Medium";
   position: relative;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  font-family: "Raleway Extra Bold";
 }
 
 .nav__link:hover {
@@ -168,9 +182,22 @@ html {
   width: 0%;
 }
 
-.nav__link:hover::before {
-  left: 0;
+.active {
+  color: #ff4848;
+}
+
+.active::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  height: 2px;
+  background-color: #ff4848;
   width: 100%;
+  left: 0;
+  transition: 0.2s;
 }
 
 .header {
@@ -1214,6 +1241,10 @@ html {
 
 /* Landscape phones and smaller */
 @media screen and (min-width: 1px) and (max-width: 479px) {
+  .nav {
+    height: 60px;
+    position: relative;
+  }
   .container {
     padding: 0 3%;
   }
