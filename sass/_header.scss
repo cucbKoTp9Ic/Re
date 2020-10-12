@@ -1,0 +1,68 @@
+.header {
+    position       : relative;
+    height         : 100vh;
+    width          : 100%;
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: space-between;
+    &__back{
+       background-image   : url(../img/hero-bg.jpg);
+       background-position: center center;
+       background-size    : cover;
+       position           : absolute;
+       height             : 100%;
+       width              : 100%;
+       z-index            : -1;
+       filter             : blur(5px) brightness(0.4);
+    }
+    &__content{
+        position       : absolute;
+        left           : 0;top: 0;
+        height         : 100%;
+        width          : 100%;
+        display        : flex;
+        flex-direction : column;
+        align-items    : center;
+        justify-content: center;
+    }
+    &__txt {
+        display       : flex;
+        flex-direction: column;
+        display       : flex;
+    }
+    &_hello {
+        text-align: center;
+        color     : white;
+        font-size : 20px;
+    }
+    &__main {
+        text-align : center;
+        color      : white;
+        font-size  : 60px;
+        font-family: $rb;
+    }
+    &__sub {
+        text-align: center;
+        color     : white;
+        font-size : 20px;
+    }
+    &__arrow {
+        position           : absolute;
+        bottom             : 30px;
+        height             : 50px;
+        width              : 50px;
+        background-color   : none;
+        border-radius      : 50%;
+        border             : 3px solid white;
+        background-image   : url(../img/angle-arrow-down_icon-icons.com_73683.svg);
+        background-position: center center;
+        background-size    : 60%;
+        background-repeat  : no-repeat;
+        transition         : 0.2s;
+    }
+    &__arrow:hover {
+        border             : 3px solid $ch-d;
+        background-position: center 80%;
+    }
+}

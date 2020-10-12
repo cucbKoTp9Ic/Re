@@ -1,0 +1,43 @@
+.nav {
+    
+    height          : 90px;
+    display         : flex;
+    align-items     : center;
+    justify-content : space-between;
+    background-color: $wt;
+    &__logo {
+        font-size   : 40px;
+        font-family : $rb;
+        padding-left: 30px;
+    }
+    &__menu {
+        display        : flex;
+        align-items    : center;
+        justify-content: space-between;
+        padding-right  : 30px;
+    }
+    
+    &__link {
+        padding    : 5px 10px;
+        margin     : 0 15px;
+        font-family: $rm;
+        position   : relative;
+        transition : 0.2s;
+    }
+    &__link:hover {
+        color: $ch-d
+    }
+    &__link::before {
+        content         : '';
+        position        : absolute;
+        bottom          : 0;left: 50%;
+        transition      : 0.2s;
+        height          : 2px;
+        background-color: $ch-d;
+        width           : 0%;
+    }
+    &__link:hover::before {
+        left : 0;
+        width: 100%;
+    }
+}

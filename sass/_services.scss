@@ -1,0 +1,69 @@
+.services {
+
+    &__content {
+        
+    }
+}
+
+.services {
+    &__cards {
+        display        : flex;
+        align-items    : center;
+        justify-content: space-around;
+        flex-wrap      : wrap;
+    }
+}
+.item {
+    width      : 280px;
+    margin     : 30px;
+    height     : 280px;
+    position   : relative;
+    perspective: 1000px;
+    &__front, &__back {
+        position           : absolute;
+        width              : 100%;
+        height             : 100%;
+        left               : 0;bottom: 0;
+        display            : flex;
+        justify-content    : center;
+        align-items        : center;
+        transition         : 1s cubic-bezier(0.21, 1.7, 0.43, 0.67);
+        backface-visibility: hidden;
+        background-color   : #fff;
+        border             : 1px solid black;
+        border-radius      : 15px;
+ }
+    &__front {
+        background-color: rgb(230, 230, 230);
+    }
+    &:hover &__front {
+        transform: rotateY(180deg);
+    }
+    &__back {
+        padding        : 25px;
+        flex-direction : column;
+        transform      : rotateY(180deg);
+        justify-content: space-between;
+    }
+    &:hover &__back {
+        transform: rotateY(360deg);
+    }
+    &__icon {
+        margin-top: 10px;
+    }
+    &__icon i {
+        font-size: 30px;
+    }
+    &__front i {
+        font-size: 56px;
+    }
+    &__name {
+        font-family: $rb;
+        font-size  : 25px;
+        text-align : center;
+    }
+    &__txt {
+        font-size : $usl;
+        text-align: center;
+    }
+}

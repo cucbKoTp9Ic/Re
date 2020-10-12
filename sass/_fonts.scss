@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Proxima Nova Light';
+    src        : url('ProximaNova-Light.eot');
+    src        : url('ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ProximaNova-Light.woff') format('woff'),
+    url('ProximaNova-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style : normal;
+    }
+$light: 'Proxima Nova Light';
+
+@font-face {
+    font-family: 'Montserrat Light';
+    src        : url('Montserrat-Light.eot');
+    src        : url('Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat-Light.woff') format('woff'),
+    url('Montserrat-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style : normal;
+    }
+$ml: 'Montserrat Light';
+
+@font-face {
+    font-family: 'Raleway Medium';
+    src        : url('Raleway-Medium.eot');
+    src        : url('Raleway-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Raleway-Medium.woff') format('woff'),
+    url('Raleway-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style : normal;
+    }
+$rm: 'Raleway Medium';
+
+@font-face {
+    font-family: 'Raleway Extra Bold';
+    src        : url('Raleway-ExtraBold.eot');
+    src        : url('Raleway-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Raleway-ExtraBold.woff') format('woff'),
+    url('Raleway-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style : normal;
+    }
+$rb: 'Raleway Extra Bold';
