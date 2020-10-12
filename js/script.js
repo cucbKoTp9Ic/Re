@@ -2,13 +2,14 @@
 $('.slider').slick({
   arrows        : true,
   adaptiveHeight: true,
-  infinite      : true,
+  infinite      : false,
   slidesToShow  : 1,
   autoplay      : false,
   autoplaySpeed : 5000,
   pauseOnFocus  : false,
   draggable     : false,
   centerMode    : true,
+  fade          : false,
 });
 
 

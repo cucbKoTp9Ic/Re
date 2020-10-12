@@ -261,7 +261,12 @@
     text-align: center;
     transition: 0.2s;
 }
-
+.slick-disabled {
+    opacity: 0.3;
+}
+.slick-disabled:hover {
+    cursor: default;
+}
 .slick-center{
     opacity: 1;
 }
