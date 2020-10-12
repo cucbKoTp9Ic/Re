@@ -390,6 +390,7 @@ html {
       -ms-flex-pack: start;
           justify-content: start;
   padding-bottom: 60px;
+  margin: 30px 0;
   position: relative;
 }
 
@@ -798,6 +799,7 @@ html {
       -ms-flex-pack: start;
           justify-content: start;
   padding-bottom: 60px;
+  margin: 30px 0;
   position: relative;
 }
 
