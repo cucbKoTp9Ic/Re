@@ -577,8 +577,8 @@ html {
   height: 200px;
   -webkit-transform: translateZ(-140px);
           transform: translateZ(-140px);
-  -webkit-transition: 0.15s;
-  transition: 0.15s;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
   margin: 50px;
 }
 
@@ -983,8 +983,8 @@ html {
   height: 200px;
   -webkit-transform: translateZ(-140px);
           transform: translateZ(-140px);
-  -webkit-transition: 0.15s;
-  transition: 0.15s;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
   margin: 50px;
 }
 

@@ -24,6 +24,9 @@ var pitem1 = document.getElementById("parallax__item1");
 var pitem2 = document.getElementById("parallax__item2");
 var pitem3 = document.getElementById("parallax__item3");
 var prlx   = document.getElementById("parallax");
+
+
+
 function move(top, bottom, screenHeight) {
     if (top < screenHeight && bottom > 0) {
       // console.log('true');
@@ -37,6 +40,9 @@ function move(top, bottom, screenHeight) {
       // console.log('false')
     }
 }
+
+
+
 addEventListener("scroll", () => {
   var value        = window.scrollY;
       bg.style.top = value * 0.3 + "px";
@@ -47,14 +53,22 @@ addEventListener("scroll", () => {
   // console.log(prlx_bottom, prlx_top, h)
 });
 
+
+
 var cube1 = document.getElementById("cube__container1");
 var cube2 = document.getElementById("cube__container2");
 var cube3 = document.getElementById("cube__container3");
 var s     = 20;
+var cube = document.getElementById("cube");
+
 addEventListener("mousemove", (e) => {
+  var cube_bottom  = cube.getBoundingClientRect().y + cube.getBoundingClientRect().height;
+  var cube_top     = cube.getBoundingClientRect().y;
   var w     = window.innerWidth;
   var h     = window.innerHeight;
-  var posY  = e.clientY;
+  if (cube_top < h && cube_bottom > 0) {
+    console.log('true');
+    var posY  = e.clientY;
   var posX  = e.pageX - document.body.clientWidth + w;
   var midY1 = 
     cube1.getBoundingClientRect().y + cube1.getBoundingClientRect().height / 2;
@@ -92,13 +106,20 @@ addEventListener("mousemove", (e) => {
   var sinx3                 = xp3 / Math.sqrt(s * s + xp3 * xp3);
   var anglex3               = (Math.asin(sinx3) * 180) / Math.PI;
       cube3.style.transform = `rotateY(${anglex3}deg) rotateX(` + angley3 + `deg)`;
-  // console.log(`sin:${sin}; asin:${angle}`);
+  }
 });
+
+
+
 addEventListener("touchmove", (e) => {
+  var cube_bottom  = cube.getBoundingClientRect().y + cube.getBoundingClientRect().height;
+  var cube_top     = cube.getBoundingClientRect().y;
   var w     = window.innerWidth;
   var h     = window.innerHeight;
-  var posY  = e.targetTouches[0].clientY;
-  var posX  = e.targetTouches[0].clientX;
+  if (cube_top < h && cube_bottom > 0) {
+    console.log('true');
+    var posY  = e.targetTouches.clientX;
+  var posX  = e.targetTouches.clientX;
   var midY1 = 
     cube1.getBoundingClientRect().y + cube1.getBoundingClientRect().height / 2;
   var midX1 = 
@@ -135,7 +156,7 @@ addEventListener("touchmove", (e) => {
   var sinx3                 = xp3 / Math.sqrt(s * s + xp3 * xp3);
   var anglex3               = (Math.asin(sinx3) * 180) / Math.PI;
       cube3.style.transform = `rotateY(${anglex3}deg) rotateX(` + angley3 + `deg)`;
-  // console.log(posY, posX)
+  }
 })
 var pressed = false;
 // addEventListener("keydown", (e) => {
