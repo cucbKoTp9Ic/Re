@@ -3,7 +3,7 @@
     height          : 90px;
     display         : flex;
     align-items     : center;
-    justify-content : space-between;
+    justify-content : space-around;
     background-color: $wt;
     &__logo {
         font-size   : 40px;
@@ -14,7 +14,7 @@
         display        : flex;
         align-items    : center;
         justify-content: space-between;
-        padding-right  : 30px;
+        padding  : 0 30px;
     }
     
     &__link {

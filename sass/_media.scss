@@ -1,0 +1,47 @@
+/* Large desktops and laptops */
+@media screen and (min-width: 1300px) {
+    .container {
+        padding: 0 calc(50% - 1170px / 2);
+    }
+}
+
+/* Portrait tablets and medium desktops */
+@media screen and (min-width: 992px) and (max-width: 1299px) {
+    .container {
+        padding: 0 calc(50% - 950px / 2);
+    }
+}
+
+/* Portrait tablets and small desktops */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        padding: 0 calc(50% - 735px / 2);
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .container {
+        padding: 0 3%;
+    }
+    
+    #cube__container3, #cube__container2, .nav__logo {
+        display: none;
+    }
+    .buttons__4, .buttons__3 {
+        display: none;
+    }
+}
+
+/* Landscape phones and smaller */
+@media screen and (min-width: 1px) and (max-width: 479px) {
+    .container {
+        padding: 0 3%;
+    }
+    #cube__container3, #cube__container2, .nav__menu {
+        display: none;
+    }
+    .buttons__4, .buttons__3 {
+        display: none;
+    }
+}

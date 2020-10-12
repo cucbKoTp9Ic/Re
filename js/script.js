@@ -12,7 +12,7 @@
 //   fade          : false,
 //   responsive: [
 //     {
-//     breakpoint: 1235,
+//     breakpoint: 1200,
 //     settings: "unslick",
 //     }
 //     ]
@@ -58,7 +58,7 @@ addEventListener("scroll", () => {
 var cube1 = document.getElementById("cube__container1");
 var cube2 = document.getElementById("cube__container2");
 var cube3 = document.getElementById("cube__container3");
-var s     = 30;
+var s     = 50;
 var cube = document.getElementById("cube");
 
 addEventListener("mousemove", (e) => {
