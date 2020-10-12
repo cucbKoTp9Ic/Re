@@ -10,6 +10,12 @@ $('.slider').slick({
   draggable     : false,
   centerMode    : true,
   fade          : false,
+  responsive: [
+    {
+    breakpoint: 1235,
+    settings: "unslick",
+    }
+    ]
 });
 
 

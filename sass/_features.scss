@@ -236,6 +236,7 @@
     height    : 80px;
     background: none;
     font-size : 0;
+    
 }
 .slick-arrow:hover {
     cursor: pointer;
@@ -256,7 +257,7 @@
     display    : flex;
     align-items: flex-start;
 }
-.slider__item {
+.slick-slide {
     opacity   : 0;
     text-align: center;
     transition: 0.2s;
