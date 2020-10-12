@@ -575,6 +575,7 @@ body {
           transform: translateZ(-140px);
   -webkit-transition: 0.15s;
   transition: 0.15s;
+  margin: 50px;
 }
 
 .cube #cube__container2 {
@@ -597,7 +598,6 @@ body {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   background-color: #af9271;
-  margin: 50px;
 }
 
 .cube__front {
@@ -981,6 +981,7 @@ body {
           transform: translateZ(-140px);
   -webkit-transition: 0.15s;
   transition: 0.15s;
+  margin: 50px;
 }
 
 .cube #cube__container2 {
@@ -1003,7 +1004,6 @@ body {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   background-color: #af9271;
-  margin: 50px;
 }
 
 .cube__front {
