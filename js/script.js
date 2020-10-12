@@ -1,22 +1,22 @@
 
-$('.slider').slick({
-  arrows        : true,
-  adaptiveHeight: true,
-  infinite      : false,
-  slidesToShow  : 1,
-  autoplay      : false,
-  autoplaySpeed : 5000,
-  pauseOnFocus  : false,
-  draggable     : false,
-  centerMode    : true,
-  fade          : false,
-  responsive: [
-    {
-    breakpoint: 1235,
-    settings: "unslick",
-    }
-    ]
-});
+// $('.slider').slick({
+//   arrows        : true,
+//   adaptiveHeight: true,
+//   infinite      : false,
+//   slidesToShow  : 1,
+//   autoplay      : false,
+//   autoplaySpeed : 5000,
+//   pauseOnFocus  : false,
+//   draggable     : false,
+//   centerMode    : true,
+//   fade          : false,
+//   responsive: [
+//     {
+//     breakpoint: 1235,
+//     settings: "unslick",
+//     }
+//     ]
+// });
 
 
 var bg     = document.getElementById("bg");
@@ -118,8 +118,8 @@ addEventListener("touchmove", (e) => {
   var h     = window.innerHeight;
   if (cube_top < h && cube_bottom > 0) {
     console.log('true');
-    var posY  = e.targetTouches.clientX;
-  var posX  = e.targetTouches.clientX;
+    var posY  = e.targetTouches[0].clientX;
+  var posX  = e.targetTouches[0].clientX;
   var midY1 = 
     cube1.getBoundingClientRect().y + cube1.getBoundingClientRect().height / 2;
   var midX1 = 
