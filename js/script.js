@@ -1,22 +1,23 @@
 
-// $('.slider').slick({
-//   arrows        : true,
-//   adaptiveHeight: true,
-//   infinite      : false,
-//   slidesToShow  : 1,
-//   autoplay      : false,
-//   autoplaySpeed : 5000,
-//   pauseOnFocus  : false,
-//   draggable     : false,
-//   centerMode    : true,
-//   fade          : false,
-//   responsive: [
-//     {
-//     breakpoint: 1200,
-//     settings: "unslick",
-//     }
-//     ]
-// });
+$('.slider').slick({
+  arrows        : true,
+  adaptiveHeight: true,
+  infinite      : false,
+  slidesToShow  : 1,
+  autoplay      : false,
+  autoplaySpeed : 5000,
+  pauseOnFocus  : false,
+  draggable     : false,
+  centerMode    : true,
+  fade          : false,
+  swipe: false,
+  responsive: [
+    {
+    breakpoint: 1100,
+    settings: "unslick",
+    }
+    ]
+});
 
 
 var bg     = document.getElementById("bg");
@@ -117,7 +118,6 @@ addEventListener("touchmove", (e) => {
   var w     = window.innerWidth;
   var h     = window.innerHeight;
   if (cube_top < h && cube_bottom > 0) {
-    console.log('true');
     var posY  = e.targetTouches[0].clientY;
   var posX  = e.targetTouches[0].clientX;
   var midY1 = 

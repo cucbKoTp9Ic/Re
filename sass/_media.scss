@@ -10,12 +10,18 @@
     .container {
         padding: 0 calc(50% - 950px / 2);
     }
+    .buttons__4 {
+        display: none;
+    }
 }
 
 /* Portrait tablets and small desktops */
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .container {
         padding: 0 calc(50% - 735px / 2);
+    }
+    #cube__container3 {
+        display: none;
     }
 }
 
@@ -38,10 +44,26 @@
     .container {
         padding: 0 3%;
     }
+    
     #cube__container3, #cube__container2, .nav__menu {
         display: none;
     }
     .buttons__4, .buttons__3 {
+        display: none;
+    }
+}
+@media screen and (max-width: 767px) {
+    #fh1 {
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) {
+    #fh2 {
+        display: none;
+    }
+}
+@media screen and (min-width: 1100px) and (max-width: 1299px) {
+    #cube__container3 {
         display: none;
     }
 }
