@@ -118,7 +118,7 @@ addEventListener("touchmove", (e) => {
   var h     = window.innerHeight;
   if (cube_top < h && cube_bottom > 0) {
     console.log('true');
-    var posY  = e.targetTouches[0].clientX;
+    var posY  = e.targetTouches[0].clientY;
   var posX  = e.targetTouches[0].clientX;
   var midY1 = 
     cube1.getBoundingClientRect().y + cube1.getBoundingClientRect().height / 2;
