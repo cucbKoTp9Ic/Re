@@ -17,11 +17,15 @@
 body {
     background-color: $back;
     overflow-x: hidden;
+    height: 100%;
 }
 html {
     overflow-x: hidden;
+    height: 100%;
 }
-
+.fa-events-icons-ready {
+    overflow-y: hidden;
+}
 .container {
     padding: 0 calc(50% - 1170px / 2);
 }

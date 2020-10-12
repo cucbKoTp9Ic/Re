@@ -50,10 +50,16 @@
 body {
   background-color: #1b1b2b;
   overflow-x: hidden;
+  height: 100%;
 }
 
 html {
   overflow-x: hidden;
+  height: 100%;
+}
+
+.fa-events-icons-ready {
+  overflow-y: hidden;
 }
 
 .container {
