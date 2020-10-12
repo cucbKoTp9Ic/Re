@@ -32,7 +32,7 @@ function move(top, bottom, screenHeight) {
       // console.log('true');
       var delta = screenHeight/2 - (top + bottom)/2;
       // console.log(delta)
-      pitem1.style.bottom = (-delta/1.2-80) + "px"
+      pitem1.style.bottom = (-delta/1.2-300) + "px"
       pitem2.style.bottom = (-delta/4-20) + "px"
       pitem3.style.top    = delta/1.1 + "px"
       pitem3.style.left   = delta*3 + "px"
@@ -58,7 +58,7 @@ addEventListener("scroll", () => {
 var cube1 = document.getElementById("cube__container1");
 var cube2 = document.getElementById("cube__container2");
 var cube3 = document.getElementById("cube__container3");
-var s     = 20;
+var s     = 30;
 var cube = document.getElementById("cube");
 
 addEventListener("mousemove", (e) => {
@@ -110,7 +110,7 @@ addEventListener("mousemove", (e) => {
 });
 
 
-
+var sm = 50;
 addEventListener("touchmove", (e) => {
   var cube_bottom  = cube.getBoundingClientRect().y + cube.getBoundingClientRect().height;
   var cube_top     = cube.getBoundingClientRect().y;
@@ -125,10 +125,10 @@ addEventListener("touchmove", (e) => {
   var midX1 = 
     cube1.getBoundingClientRect().x + cube1.getBoundingClientRect().width / 2;
   var yp1                   = ((posY - midY1) / document.body.clientHeight) * 200;
-  var siny1                 = yp1 / Math.sqrt(s * s + yp1 * yp1);
+  var siny1                 = yp1 / Math.sqrt(sm * sm + yp1 * yp1);
   var angley1               = (-Math.asin(siny1) * 180) / Math.PI;
   var xp1                   = ((posX - midX1) / document.body.clientWidth) * 200;
-  var sinx1                 = xp1 / Math.sqrt(s * s + xp1 * xp1);
+  var sinx1                 = xp1 / Math.sqrt(sm * sm + xp1 * xp1);
   var anglex1               = (Math.asin(sinx1) * 180) / Math.PI;
       cube1.style.transform = `rotateY(${anglex1}deg) rotateX(` + angley1 + `deg)`;
 
@@ -137,10 +137,10 @@ addEventListener("touchmove", (e) => {
   var midX2 = 
     cube2.getBoundingClientRect().x + cube2.getBoundingClientRect().width / 2;
   var yp2                   = ((posY - midY2) / document.body.clientHeight) * 200;
-  var siny2                 = yp2 / Math.sqrt(s * s + yp2 * yp2);
+  var siny2                 = yp2 / Math.sqrt(sm * sm + yp2 * yp2);
   var angley2               = (-Math.asin(siny2) * 180) / Math.PI;
   var xp2                   = ((posX - midX2) / document.body.clientWidth) * 200;
-  var sinx2                 = xp2 / Math.sqrt(s * s + xp2 * xp2);
+  var sinx2                 = xp2 / Math.sqrt(sm * sm + xp2 * xp2);
   var anglex2               = (Math.asin(sinx2) * 180) / Math.PI;
       cube2.style.transform = 
     `rotateY(${anglex2}deg)       rotateX(` + angley2 + `deg)`;
@@ -150,10 +150,10 @@ addEventListener("touchmove", (e) => {
   var midX3 = 
     cube3.getBoundingClientRect().x + cube3.getBoundingClientRect().width / 2;
   var yp3                   = ((posY - midY3) / document.body.clientHeight) * 200;
-  var siny3                 = yp3 / Math.sqrt(s * s + yp3 * yp3);
+  var siny3                 = yp3 / Math.sqrt(sm * sm + yp3 * yp3);
   var angley3               = (-Math.asin(siny3) * 180) / Math.PI;
   var xp3                   = ((posX - midX3) / document.body.clientWidth) * 200;
-  var sinx3                 = xp3 / Math.sqrt(s * s + xp3 * xp3);
+  var sinx3                 = xp3 / Math.sqrt(sm * sm + xp3 * xp3);
   var anglex3               = (Math.asin(sinx3) * 180) / Math.PI;
       cube3.style.transform = `rotateY(${anglex3}deg) rotateX(` + angley3 + `deg)`;
   }

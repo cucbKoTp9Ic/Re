@@ -198,8 +198,8 @@
     }
     &__item1 {
         background-image   : url(../img/gory_noch_sneg_vershina_114039_1280x1280.jpg);
-        filter             : brightness(1.5);
-        background-size    : 100% auto;
+        filter             : brightness(1.5) ;
+        background-size    : cover;
         bottom             : 0;
         background-position: center bottom;
         background-repeat  : no-repeat;
@@ -212,7 +212,7 @@
         background-size    : cover;
         background-position: center bottom;
         background-repeat  : no-repeat;
-        filter             : brightness(0.7);
+        filter             : brightness(0.7) blur(1px);
     }
     &__item3 {
         top                : 0;left: 0;
@@ -223,6 +223,7 @@
         background-position: center center;
         background-size    : contain;
         background-repeat  : no-repeat;
+        filter: blur(5px);
     }
 }
 .slider {
