@@ -232,7 +232,7 @@ html {
   display: flex;
 }
 
-.header_hello {
+.header__hello {
   text-align: center;
   color: white;
   font-size: 20px;
@@ -1210,6 +1210,12 @@ html {
 @media screen and (min-width: 1px) and (max-width: 479px) {
   .container {
     padding: 0 3%;
+  }
+  .header__main {
+    font-size: 29px;
+  }
+  .header__hello, .header__sub {
+    font-size: 15px;
   }
   #cube__container3, #cube__container2, .nav__menu {
     display: none;

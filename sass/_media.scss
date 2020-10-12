@@ -44,6 +44,12 @@
     .container {
         padding: 0 3%;
     }
+    .header__main {
+        font-size: 29px;
+    }
+    .header__hello, .header__sub {
+        font-size: 15px;
+    }
     
     #cube__container3, #cube__container2, .nav__menu {
         display: none;
