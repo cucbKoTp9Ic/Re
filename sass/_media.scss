@@ -13,6 +13,12 @@
     .buttons__4 {
         display: none;
     }
+    .nav {
+        position: relative;
+    }
+    body {
+        overflow-x: hidden;
+    }
 }
 
 /* Portrait tablets and small desktops */
