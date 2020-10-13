@@ -13,7 +13,7 @@ $('.slider').slick({
   swipe: false,
   responsive: [
     {
-    breakpoint: 1100,
+    breakpoint: 1270,
     settings: "unslick",
     }
     ]
