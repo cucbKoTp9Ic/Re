@@ -192,4 +192,5 @@ $('.nav__menu a').on("click", function(){
   });
   $('.header__arrow').on("click", function(){
     $('.nav__menu a').removeClass('active');
+    $('#services').addClass('active');
     });
