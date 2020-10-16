@@ -432,11 +432,6 @@ html {
   transition: 0.4s;
 }
 
-.features__item:hover {
-  -webkit-box-shadow: inset 0px 0px 30px -2px rgba(250, 71, 71, 0.5);
-          box-shadow: inset 0px 0px 30px -2px rgba(250, 71, 71, 0.5);
-}
-
 .features__header {
   text-align: center;
   font-family: "Raleway Extra Bold";
@@ -785,11 +780,6 @@ html {
   z-index: 500;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-}
-
-.features__item:hover {
-  -webkit-box-shadow: inset 0px 0px 30px -2px rgba(250, 71, 71, 0.5);
-          box-shadow: inset 0px 0px 30px -2px rgba(250, 71, 71, 0.5);
 }
 
 .features__header {
