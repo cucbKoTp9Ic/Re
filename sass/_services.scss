@@ -1,11 +1,4 @@
 .services {
-
-    &__content {
-        
-    }
-}
-
-.services {
     &__cards {
         display        : flex;
         align-items    : center;
@@ -32,7 +25,7 @@
         background-color   : #fff;
         border             : 1px solid black;
         border-radius      : 15px;
- }
+}
     &__front {
         background-color: rgb(230, 230, 230);
     }
@@ -53,17 +46,21 @@
     }
     &__icon i {
         font-size: 30px;
+        color: $wt;
     }
     &__front i {
         font-size: 56px;
+        color: $wt;
     }
     &__name {
         font-family: $rb;
         font-size  : 25px;
         text-align : center;
+        color: $wt;
     }
     &__txt {
         font-size : $usl;
         text-align: center;
+        color: $wt;
     }
 }

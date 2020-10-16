@@ -25,8 +25,6 @@
         display: none;
     }
 }
-
-/* Landscape phones and portrait tablets */
 @media screen and (min-width: 480px) and (max-width: 767px) {
     .container {
         padding: 0 3%;
@@ -39,8 +37,6 @@
         display: none;
     }
 }
-
-/* Landscape phones and smaller */
 @media screen and (min-width: 1px) and (max-width: 479px) {
     .nav {
         height: 60px;
