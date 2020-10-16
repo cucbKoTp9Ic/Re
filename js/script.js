@@ -4,10 +4,10 @@
     function preloader() { 
       setInterval(()=>{
         p.style.opacity = '0'
-      }, 500)
+      }, 0)
       setInterval(()=> {
         p.style.display = 'none';
-      }, 1500)
+      }, 1000)
     }
     preloader();
 
@@ -205,11 +205,23 @@ $('.nav__menu a').on("click", function(){
   $('.nav__menu a').removeClass('active');
   $(this).addClass('active');
   });
-  $('.header__arrow').on("click", function(){
-    $('.nav__menu a').removeClass('active');
-    $('#l2').addClass('active');
-    });
+$('.header__arrow').on("click", function(){
+  $('.nav__menu a').removeClass('active');
+  $('.nav--mobile__menu a').removeClass('m-active');
+  $('#l2').addClass('active');
+  $('#ml2').addClass('m-active');
   });
-
-    
-
+});
+$('.nav__logo').on("click", function(){
+  $('.nav__menu a').removeClass('active');
+  $('.nav--mobile__menu a').removeClass('m-active');
+  $('#l1').addClass('active');
+  $('#ml1').addClass('m-active');
+  });
+$(".nav--mobile__btn").on("click", function() {
+  $(".nav--mobile").toggleClass("menu-active")
+})
+$('.nav--mobile__menu a').on("click", function(){
+  $('.nav--mobile__menu a').removeClass('m-active');
+  $(this).addClass('m-active');
+  });
