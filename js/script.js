@@ -10,11 +10,11 @@
       }, 1500)
     }
     preloader();
-  });
 
-    
 
-// $('.slider').slick({
+
+
+    // $('.slider').slick({
 //   arrows        : true,
 //   adaptiveHeight: true,
 //   infinite      : false,
@@ -209,3 +209,7 @@ $('.nav__menu a').on("click", function(){
     $('.nav__menu a').removeClass('active');
     $('#l2').addClass('active');
     });
+  });
+
+    
+

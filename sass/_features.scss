@@ -106,19 +106,19 @@
         
     }
     &__1::before, &__1::after{
-        background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgb(255, 123, 0) 100%);
+        background: inherit;
     }
     &__2 {
         background: linear-gradient(90deg, rgba(255,192,0,1) 30%, rgb(200, 255, 0) 100%);
     }
     &__2::before, &__2::after {
-        background: linear-gradient(90deg, rgba(255,192,0,1) 30%, rgb(200, 255, 0) 100%);
+        background: inherit;
     }
     &__3 {
         background: linear-gradient(90deg, rgb(0, 255, 128) 0%, rgb(0, 153, 255) 100%);
     }
     &__3::before, &__3::after {
-        background: linear-gradient(90deg, rgb(0, 255, 128) 0%, rgb(0, 153, 255) 100%);
+        background: inherit;;
     }
     &__4 {
         background: linear-gradient(90deg, rgba(0,104,255,1) 0%, rgba(255,0,236,1) 100%);
