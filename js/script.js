@@ -7,7 +7,7 @@
       }, 500)
       setInterval(()=> {
         p.style.display = 'none';
-      }, 1000)
+      }, 1500)
     }
     preloader();
   });
