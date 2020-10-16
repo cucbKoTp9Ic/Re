@@ -157,27 +157,27 @@ html {
 }
 
 .preloader__line1 {
-  border-bottom: 3px solid #ff6e6e;
+  border-bottom: 3px solid #ff4848;
   -webkit-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
           transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
-  -webkit-animation: line1 1s infinite linear;
-          animation: line1 1s infinite linear;
+  -webkit-animation: line1 0.5s infinite linear;
+          animation: line1 0.5s infinite linear;
 }
 
 .preloader__line2 {
-  border-bottom: 3px solid #6e6eff;
+  border-bottom: 3px solid #ff4848;
   -webkit-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
           transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
-  -webkit-animation: line2 1s infinite linear;
-          animation: line2 1s infinite linear;
+  -webkit-animation: line2 0.5s infinite linear;
+          animation: line2 0.5s infinite linear;
 }
 
 .preloader__line3 {
-  border-bottom: 3px solid #6eff6e;
+  border-bottom: 3px solid #ff4848;
   -webkit-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
           transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
-  -webkit-animation: line3 1s infinite linear;
-          animation: line3 1s infinite linear;
+  -webkit-animation: line3 0.5s infinite linear;
+          animation: line3 0.5s infinite linear;
 }
 
 @-webkit-keyframes line1 {

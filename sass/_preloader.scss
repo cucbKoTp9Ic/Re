@@ -25,19 +25,19 @@
         
     }
     &__line1 {
-        border-bottom: 3px solid rgb(255, 110, 110);
+        border-bottom: 3px solid $ch-d;
         transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
-        animation: line1 1s infinite linear;
+        animation: line1 0.5s infinite linear;
     }
     &__line2 {
-        border-bottom: 3px solid rgb(110, 110, 255);
+        border-bottom: 3px solid $ch-d;
         transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
-        animation: line2 1s infinite linear;
+        animation: line2 0.5s infinite linear;
     }
     &__line3 {
-        border-bottom: 3px solid rgb(110, 255, 110);
+        border-bottom: 3px solid $ch-d;
         transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
-        animation: line3 1s infinite linear;
+        animation: line3 0.5s infinite linear;
     }
 }
 @keyframes line1 {
