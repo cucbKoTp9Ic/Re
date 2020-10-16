@@ -42,16 +42,16 @@
 }
 @keyframes line1 {
     100% {
-        transform: rotateX(45deg) rotateY(-45deg) rotateZ(360deg)
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg)
     }
 }
 @keyframes line2 {
     100% {
-        transform: rotateX(45deg) rotateY(0deg) rotateZ(-360deg)
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(-360deg)
     }
 }
 @keyframes line3 {
     100% {
-        transform: rotateX(45deg) rotateY(45deg) rotateZ(360deg)
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg)
     }
 }
