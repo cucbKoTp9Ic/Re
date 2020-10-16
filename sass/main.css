@@ -522,6 +522,7 @@ html {
       -ms-flex-positive: 1;
           flex-grow: 1;
   background-color: #1a1a1a;
+  border-radius: 10px;
 }
 
 .nav--mobile__link {
