@@ -2,9 +2,10 @@
     position: fixed;
     height: 100%;
     width: 100%;
-    background-color: $wt;
+    background-color: $gy;
     opacity: 1;
     z-index: 5000;
+    transition: 1s;
 }
 .preloader {
     display: flex;
@@ -24,17 +25,17 @@
         
     }
     &__line1 {
-        border-bottom: 3px solid red;
+        border-bottom: 3px solid rgb(255, 110, 110);
         transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
         animation: line1 1s infinite linear;
     }
     &__line2 {
-        border-bottom: 3px solid blue;
+        border-bottom: 3px solid rgb(110, 110, 255);
         transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
         animation: line2 1s infinite linear;
     }
     &__line3 {
-        border-bottom: 3px solid rgb(0, 255, 0);
+        border-bottom: 3px solid rgb(110, 255, 110);
         transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
         animation: line3 1s infinite linear;
     }

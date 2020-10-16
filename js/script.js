@@ -1,11 +1,15 @@
 
   $(document).ready(function(){
     let p = document.getElementById('preloader')
-    function preloader() {
-      p.style.opacity = '0'
-      p.style.display = 'none'
+    function preloader() { 
+      setInterval(()=>{
+        p.style.opacity = '0'
+      }, 500)
+      setInterval(()=> {
+        p.style.display = 'none';
+      }, 1000)
     }
-    setTimeout(preloader, 1000)
+    preloader();
   });
 
     
