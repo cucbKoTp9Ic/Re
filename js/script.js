@@ -1,23 +1,34 @@
 
-$('.slider').slick({
-  arrows        : true,
-  adaptiveHeight: true,
-  infinite      : false,
-  slidesToShow  : 1,
-  autoplay      : false,
-  autoplaySpeed : 5000,
-  pauseOnFocus  : false,
-  draggable     : false,
-  centerMode    : true,
-  fade          : false,
-  swipe: false,
-  responsive: [
-    {
-    breakpoint: 1500,
-    settings: "unslick",
+  $(document).ready(function(){
+    let p = document.getElementById('preloader')
+    function preloader() {
+      p.style.opacity = '0'
+      p.style.display = 'none'
     }
-    ]
-});
+    setTimeout(preloader, 1000)
+  });
+
+    
+
+// $('.slider').slick({
+//   arrows        : true,
+//   adaptiveHeight: true,
+//   infinite      : false,
+//   slidesToShow  : 1,
+//   autoplay      : false,
+//   autoplaySpeed : 5000,
+//   pauseOnFocus  : false,
+//   draggable     : false,
+//   centerMode    : true,
+//   fade          : false,
+//   swipe: false,
+//   responsive: [
+//     {
+//     breakpoint: 1500,
+//     settings: "unslick",
+//     }
+//     ]
+// });
 
 
 var bg     = document.getElementById("bg");
