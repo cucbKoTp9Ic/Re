@@ -37,6 +37,12 @@
         display: none;
     }
 }
+@media screen and (min-width: 480px) {
+    .nav--mobile {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 1px) and (max-width: 479px) {
     .nav {
         height: 60px;
