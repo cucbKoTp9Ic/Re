@@ -1,7 +1,9 @@
 #preloader {
     position: fixed;
-    height: 100%;
-    width: 100%;
+    height: 200%;
+    width: 200%;
+    top: -50%;
+    left: -50%;
     background-color: $gy;
     opacity: 1;
     z-index: 5000;
