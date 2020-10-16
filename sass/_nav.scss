@@ -90,7 +90,7 @@
     margin-bottom: 3px;
     width: 18px;
     background-color: $txt;
-    transition: width 0s 0.2s;
+    transition: 0.2s;
     position: relative;
 }
 .nav--mobile__btn span::before {
@@ -99,7 +99,8 @@
     background-color: $txt;
     height: 2px;
     width: 18px;
-    transform: translateY(-4px)
+    transform: translateY(-4px);
+    transition: 0.2s;
 }
 .nav--mobile__btn span::after {
     content: '';
@@ -108,16 +109,13 @@
     height: 2px;
     width: 18px;
     transform: translateY(4px);
+    transition: 0.2s;
 }
 .menu-active .nav--mobile__btn span::before {
-    transform: rotateZ(45deg);
-    top: 0;
-    transition: translate 0.2s 0s, transform 0.2s 0.2s;
+    transform: translateY(0px) rotateZ(45deg);
 }
 .menu-active .nav--mobile__btn span::after {
-    transform: rotateZ(-45deg);
-    top: 0;
-    transition: top 0.2s 0s, transform 0.2s 0.2s;
+    transform: translateY(0px) rotateZ(-45deg);
 }
 .menu-active .nav--mobile__btn span {
     background-color: transparent;

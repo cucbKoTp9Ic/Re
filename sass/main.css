@@ -462,8 +462,8 @@ html {
   margin-bottom: 3px;
   width: 18px;
   background-color: white;
-  -webkit-transition: width 0s 0.2s;
-  transition: width 0s 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   position: relative;
 }
 
@@ -475,6 +475,8 @@ html {
   width: 18px;
   -webkit-transform: translateY(-4px);
           transform: translateY(-4px);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .nav--mobile__btn span::after {
@@ -485,26 +487,18 @@ html {
   width: 18px;
   -webkit-transform: translateY(4px);
           transform: translateY(4px);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .menu-active .nav--mobile__btn span::before {
-  -webkit-transform: rotateZ(45deg);
-          transform: rotateZ(45deg);
-  top: 0;
-  -webkit-transition: translate 0.2s 0s, -webkit-transform 0.2s 0.2s;
-  transition: translate 0.2s 0s, -webkit-transform 0.2s 0.2s;
-  transition: translate 0.2s 0s, transform 0.2s 0.2s;
-  transition: translate 0.2s 0s, transform 0.2s 0.2s, -webkit-transform 0.2s 0.2s;
+  -webkit-transform: translateY(0px) rotateZ(45deg);
+          transform: translateY(0px) rotateZ(45deg);
 }
 
 .menu-active .nav--mobile__btn span::after {
-  -webkit-transform: rotateZ(-45deg);
-          transform: rotateZ(-45deg);
-  top: 0;
-  -webkit-transition: top 0.2s 0s, -webkit-transform 0.2s 0.2s;
-  transition: top 0.2s 0s, -webkit-transform 0.2s 0.2s;
-  transition: top 0.2s 0s, transform 0.2s 0.2s;
-  transition: top 0.2s 0s, transform 0.2s 0.2s, -webkit-transform 0.2s 0.2s;
+  -webkit-transform: translateY(0px) rotateZ(-45deg);
+          transform: translateY(0px) rotateZ(-45deg);
 }
 
 .menu-active .nav--mobile__btn span {
