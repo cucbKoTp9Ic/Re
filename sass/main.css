@@ -1047,7 +1047,6 @@ html {
 @media screen and (min-width: 1px) and (max-width: 479px) {
   .nav {
     height: 60px;
-    position: relative;
   }
   .container {
     padding: 0 3%;
